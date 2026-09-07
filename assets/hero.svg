@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="積み上げたレンガを表すビジュアル">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#efe8dc"/><stop offset=".58" stop-color="#d9c7b1"/><stop offset="1" stop-color="#a8876d"/></linearGradient>
+  <radialGradient id="sun"><stop offset="0" stop-color="#fff6d8" stop-opacity=".95"/><stop offset="1" stop-color="#fff6d8" stop-opacity="0"/></radialGradient>
+  <linearGradient id="brick" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b76642"/><stop offset=".55" stop-color="#9d4d31"/><stop offset="1" stop-color="#743722"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#4e3022" flood-opacity=".28"/></filter>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="2" seed="4" result="n"/><feColorMatrix in="n" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .09 0"/><feBlend in="SourceGraphic" mode="multiply"/></filter>
+</defs>
+<rect width="1200" height="760" fill="url(#bg)"/>
+<circle cx="930" cy="170" r="210" fill="url(#sun)"/>
+<path d="M0 600 C250 550 410 580 640 545 C860 510 1010 525 1200 470 V760 H0Z" fill="#8e735f" opacity=".45"/>
+<g filter="url(#shadow)">
+  <g filter="url(#grain)"><rect x="165" y="520" width="430" height="120" rx="18" fill="url(#brick)"/></g>
+  <g filter="url(#grain)"><rect x="555" y="520" width="330" height="120" rx="18" fill="url(#brick)"/></g>
+  <g filter="url(#grain)"><rect x="305" y="370" width="430" height="120" rx="18" fill="url(#brick)"/></g>
+  <g filter="url(#grain)"><rect x="445" y="220" width="390" height="120" rx="18" fill="url(#brick)"/></g>
+</g>
+<g fill="#f9f3ea" opacity=".92" font-family="serif">
+  <text x="225" y="595" font-size="34" letter-spacing="2">Research</text>
+  <text x="620" y="595" font-size="34" letter-spacing="2">AI</text>
+  <text x="380" y="445" font-size="34" letter-spacing="2">Development</text>
+  <text x="530" y="295" font-size="34" letter-spacing="2">Publishing</text>
+</g>
+<text x="760" y="685" fill="#fffaf1" font-size="31" font-family="serif" letter-spacing="3">小さな一歩が、大きな信頼をつくる。</text>
+</svg>
